@@ -1,3 +1,7 @@
+main > section:nth-of-type(2) > div > * {
+  border: 1px solid rebeccapurple;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -175,7 +179,7 @@ main > .hero > div > img:nth-of-type(4) {
 main > .hero > div > img:nth-of-type(3) {
   transform: rotate(-20deg);
 }
-main > section:first-of-type {
+main > section:nth-of-type(1) {
   width: 100%;
   background-color: #a9ff36;
   display: flex;
@@ -184,25 +188,25 @@ main > section:first-of-type {
   align-items: center;
   position: relative;
 }
-main > section:first-of-type > div {
+main > section:nth-of-type(1) > div {
   margin: 84px auto 0;
   width: 1090px;
   display: flex;
   justify-content: space-between;
 }
-main > section:first-of-type > div:first-of-type > div {
+main > section:nth-of-type(1) > div:first-of-type > div {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-main > section:first-of-type > div:first-of-type > div:first-of-type > p {
+main > section:nth-of-type(1) > div:first-of-type > div:first-of-type > p {
   font-size: 22px;
   margin: 0 0 0px 60px;
   font-weight: 100;
   font-family: "Gudea", sans-serif;
   line-height: 35px;
 }
-main > section:first-of-type > div:first-of-type > div:first-of-type::before {
+main > section:nth-of-type(1) > div:first-of-type > div:first-of-type::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -211,7 +215,7 @@ main > section:first-of-type > div:first-of-type > div:first-of-type::before {
   top: 17px;
   background-color: #060602;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a {
   text-align: center;
   background-color: transparent;
   height: 80px;
@@ -221,7 +225,7 @@ main > section:first-of-type > div:first-of-type > div:last-of-type > a {
   font-weight: 600;
   letter-spacing: 1px;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a::after {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a::after {
   content: "";
   position: absolute;
   background-color: #060602;
@@ -230,7 +234,7 @@ main > section:first-of-type > div:first-of-type > div:last-of-type > a::after {
   height: 100%;
   transition: 0.4s;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:first-of-type {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:first-of-type {
   width: 264px;
   padding: 27px 48px;
   font-size: 17px;
@@ -238,20 +242,20 @@ main > section:first-of-type > div:first-of-type > div:last-of-type > a:first-of
   font-family: "Gudea", sans-serif;
   color: white;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:first-of-type::after {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:first-of-type::after {
   right: 0;
   width: 100%;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:first-of-type:hover {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:first-of-type:hover {
   color: black;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:first-of-type:hover::after {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:first-of-type:hover::after {
   width: 0;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type {
   width: 80px;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type > img {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type > img {
   width: 100%;
   height: 100%;
   -o-object-fit: scale-down;
@@ -260,34 +264,34 @@ main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-
   display: inline-block;
   transition: 0.2s;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type::after {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type::after {
   left: 0;
   width: 0;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type:hover {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type:hover {
   color: white;
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type:hover > img {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type:hover > img {
   filter: invert(100%);
 }
-main > section:first-of-type > div:first-of-type > div:last-of-type > a:last-of-type:hover::after {
+main > section:nth-of-type(1) > div:first-of-type > div:last-of-type > a:last-of-type:hover::after {
   width: 100%;
 }
-main > section:first-of-type > div:last-of-type {
+main > section:nth-of-type(1) > div:last-of-type {
   margin-bottom: 200px;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type {
   display: flex;
   position: relative;
   justify-content: flex-end;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type > figure {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type > figure {
   width: 365px;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type > figure > img {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type > figure > img {
   width: 100%;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type > h3 {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type > h3 {
   position: absolute;
   left: 0;
   top: 50px;
@@ -298,12 +302,12 @@ main > section:first-of-type > div:last-of-type > div:first-of-type > h3 {
   font-weight: 400;
   line-height: 50px;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type > h3 > span {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type > h3 > span {
   margin-left: 51px;
   display: flex;
   position: relative;
 }
-main > section:first-of-type > div:last-of-type > div:first-of-type > h3 > span:last-of-type::before {
+main > section:nth-of-type(1) > div:last-of-type > div:first-of-type > h3 > span:last-of-type::before {
   content: "";
   width: 35px;
   height: 2px;
@@ -312,35 +316,35 @@ main > section:first-of-type > div:last-of-type > div:first-of-type > h3 > span:
   left: -50px;
   top: 50%;
 }
-main > section:first-of-type > div:last-of-type > div:last-of-type {
+main > section:nth-of-type(1) > div:last-of-type > div:last-of-type {
   display: flex;
   justify-content: space-between;
 }
-main > section:first-of-type > div:last-of-type > div:last-of-type > div {
+main > section:nth-of-type(1) > div:last-of-type > div:last-of-type > div {
   display: flex;
   flex-direction: column;
 }
-main > section:first-of-type > div:last-of-type > div:last-of-type > div > p {
+main > section:nth-of-type(1) > div:last-of-type > div:last-of-type > div > p {
   margin-top: 16px;
   font-family: "Gudea", sans-serif;
   font-size: 14px;
 }
-main > section:first-of-type > div:last-of-type > div:last-of-type > figure {
+main > section:nth-of-type(1) > div:last-of-type > div:last-of-type > figure {
   margin-top: 40px;
   width: 80px;
 }
-main > section:first-of-type > div:last-of-type > div:last-of-type > figure > img {
+main > section:nth-of-type(1) > div:last-of-type > div:last-of-type > figure > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main > section:first-of-type > div > div:first-of-type {
+main > section:nth-of-type(1) > div > div:first-of-type {
   width: 550px;
 }
-main > section:first-of-type > div > div:last-of-type {
+main > section:nth-of-type(1) > div > div:last-of-type {
   width: 380px;
 }
-main > section:first-of-type > a {
+main > section:nth-of-type(1) > a {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -354,6 +358,93 @@ main > section:first-of-type > a {
   border-radius: 50%;
   background-color: #fff;
 }
+main > section:nth-of-type(2) {
+  padding: 160px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main > section:nth-of-type(2) > * {
+  width: 1130px;
+  margin: 0 auto;
+}
+main > section:nth-of-type(2) > h2 {
+  font-size: 95px;
+  font-family: "Gudea", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 900;
+  line-height: 105px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+main > section:nth-of-type(2) > h2 > span {
+  font-family: "Noto Sans Gothic", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  font-weight: 300;
+  top: -27px;
+  left: 43px;
+}
+main > section:nth-of-type(2) > div {
+  display: flex;
+  justify-content: space-between;
+}
+main > section:nth-of-type(2) > div > ul {
+  width: 350px;
+  height: 450px;
+  margin-top: 30px;
+}
+main > section:nth-of-type(2) > div > ul > li {
+  font-family: "Gudea", sans-serif;
+  line-height: 28px;
+  margin-bottom: 24px;
+  position: relative;
+  margin-bottom: 10px;
+}
+main > section:nth-of-type(2) > div > ul > li > h4,
+main > section:nth-of-type(2) > div > ul > li > p {
+  margin-bottom: 10px;
+}
+main > section:nth-of-type(2) > div > ul > li > h4 {
+  font-weight: 200;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+main > section:nth-of-type(2) > div > ul > li > p {
+  overflow: hidden;
+  height: 0;
+  font-size: 16px;
+}
+main > section:nth-of-type(2) > div > ul > li > span {
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  left: -100px;
+  top: 9px;
+  background-color: #060602;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(1) > p {
+  animation: graphp1 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(1) > span {
+  animation: graphspan1 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(2) > p {
+  animation: graphp2 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(2) > span {
+  animation: graphspan2 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(3) > p {
+  animation: graphp3 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > ul > li:nth-of-type(3) > span {
+  animation: graphspan3 15s linear infinite;
+}
+main > section:nth-of-type(2) > div > * {
+  width: 50%;
+}
 
 @keyframes spin {
   to {
@@ -363,5 +454,53 @@ main > section:first-of-type > a {
 @keyframes spinHover {
   to {
     transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+@keyframes graphspan1 {
+  0%, 34% {
+    width: 24px;
+  }
+  2%, 32% {
+    width: 40px;
+  }
+}
+@keyframes graphp1 {
+  0%, 34% {
+    height: 0px;
+  }
+  2%, 32% {
+    height: 115px;
+  }
+}
+@keyframes graphspan2 {
+  0%, 32%, 68% {
+    width: 24px;
+  }
+  34%, 66% {
+    width: 40px;
+  }
+}
+@keyframes graphp2 {
+  0%, 32%, 68% {
+    height: 0px;
+  }
+  34%, 66% {
+    height: 82px;
+  }
+}
+@keyframes graphspan3 {
+  0%, 66%, 100% {
+    width: 24px;
+  }
+  68%, 98% {
+    width: 40px;
+  }
+}
+@keyframes graphp3 {
+  0%, 66%, 100% {
+    height: 0px;
+  }
+  68%, 98% {
+    height: 115px;
   }
 }/*# sourceMappingURL=master.css.map */

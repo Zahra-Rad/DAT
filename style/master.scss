@@ -197,7 +197,7 @@ main {
     }
   }
   > section {
-    &:first-of-type {
+    &:nth-of-type(1) {
       width: 100%;
       background-color: $primaryColor;
       display: flex;
@@ -387,6 +387,100 @@ main {
         background-color: #fff;
       }
     }
+    &:nth-of-type(2) {
+      padding: 160px 20px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      > * {
+        width: 1130px;
+        margin: 0 auto;
+      }
+      > h2 {
+        font-size: 95px;
+        font-family: $pfont;
+        margin-bottom: 40px;
+        font-weight: 900;
+        line-height: 105px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        > span {
+          font-family: $secondaryFont;
+          font-size: 16px;
+          position: absolute;
+          font-weight: 300;
+          top: -27px;
+          left: 43px;
+        }
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        > ul {
+          width: 350px;
+          height: 450px;
+          margin-top: 30px;
+          > li {
+            font-family: $pfont;
+            line-height: 28px;
+            margin-bottom: 24px;
+            position: relative;
+            > h4,
+            > p {
+              margin-bottom: 10px;
+            }
+            margin-bottom: 10px;
+            > h4 {
+              font-weight: 200;
+              font-size: 22px;
+              text-transform: uppercase;
+            }
+            > p {
+              overflow: hidden;
+              height: 0;
+              font-size: 16px;
+            }
+            > span {
+              width: 24px;
+              height: 2px;
+              position: absolute;
+              left: -100px;
+              top: 9px;
+              background-color: $secondaryColor;
+            }
+            &:nth-of-type(1) {
+              > p {
+                animation: graphp1 15s linear infinite;
+              }
+              > span {
+                animation: graphspan1 15s linear infinite;
+              }
+            }
+            &:nth-of-type(2) {
+              > p {
+                animation: graphp2 15s linear infinite;
+              }
+              > span {
+                animation: graphspan2 15s linear infinite;
+              }
+            }
+            &:nth-of-type(3) {
+              > p {
+                animation: graphp3 15s linear infinite;
+              }
+              > span {
+                animation: graphspan3 15s linear infinite;
+              }
+            }
+          }
+        }
+        > * {
+          width: 50%;
+          @extend %bt;
+        }
+      }
+    }
   }
 }
 
@@ -398,5 +492,69 @@ main {
 @keyframes spinHover {
   to {
     transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+@keyframes graphspan1 {
+  0%,
+  34% {
+    width: 24px;
+  }
+  2%,
+  32% {
+    width: 40px;
+  }
+}
+@keyframes graphp1 {
+  0%,
+  34% {
+    height: 0px;
+  }
+  2%,
+  32% {
+    height: 115px;
+  }
+}
+@keyframes graphspan2 {
+  0%,
+  32%,
+  68% {
+    width: 24px;
+  }
+  34%,
+  66% {
+    width: 40px;
+  }
+}
+@keyframes graphp2 {
+  0%,
+  32%,
+  68% {
+    height: 0px;
+  }
+  34%,
+  66% {
+    height: 82px;
+  }
+}
+@keyframes graphspan3 {
+  0%,
+  66%,
+  100% {
+    width: 24px;
+  }
+  68%,
+  98% {
+    width: 40px;
+  }
+}
+@keyframes graphp3 {
+  0%,
+  66%,
+  100% {
+    height: 0px;
+  }
+  68%,
+  98% {
+    height: 115px;
   }
 }
