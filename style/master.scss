@@ -475,9 +475,204 @@ main {
             }
           }
         }
-        > * {
+        > figure {
+          position: relative;
+          width: 625px;
+          margin-right: -60px;
+          background-color: $primaryColor;
+          > figcaption {
+            top: 32px;
+            left: 32px;
+            font-family: $secondaryFont;
+            background-color: #fff;
+            position: absolute;
+            color: $secondaryColor;
+            padding: 20px 32px;
+            text-align: center;
+            font-size: 16px;
+            > span {
+              font-size: 40px;
+              font-weight: bolder;
+            }
+          }
+          > img {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 504px;
+            animation: imgExtend 15s linear infinite;
+            object-position: -10px 50%;
+            opacity: 0;
+          }
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      padding: 160px 0px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      > * {
+        // width: 1130px;
+        margin: 0 auto;
+      }
+      > h2 {
+        font-size: 95px;
+        font-family: $pfont;
+        margin-bottom: 40px;
+        font-weight: 900;
+        line-height: 105px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        > span {
+          font-family: $secondaryFont;
+          font-size: 16px;
+          position: absolute;
+          font-weight: 300;
+          top: -24px;
+          left: 8px;
+        }
+      }
+      > div {
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        overflow: hidden;
+        > div {
           width: 50%;
-          @extend %bt;
+          &:first-of-type {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            > div {
+              &:first-of-type {
+                display: flex;
+                flex-direction: row-reverse;
+                > div {
+                  width: 260px;
+                  padding: 32px;
+                  margin-right: 24px;
+                  background-color: $primaryColor;
+                  height: 320px;
+                  > h4 {
+                    font-family: $primaryFont;
+                    text-transform: uppercase;
+                    font-size: 26px;
+                    margin-bottom: 64px;
+                    font-weight: 400;
+                  }
+                  > p {
+                    font-family: $pfont;
+                    color: rgba(6, 6, 2, 0.7);
+                    font-size: 15px;
+                    margin-top: -5px;
+                  }
+                }
+              }
+              &:last-of-type {
+                width: 340px;
+                display: flex;
+                background-color: $primaryColor;
+                > div {
+                  padding: 32px;
+                  width: 340px;
+                  z-index: -1;
+                  > h4 {
+                    font-family: $primaryFont;
+                    text-transform: uppercase;
+                    font-size: 26px;
+                    font-weight: 400;
+                    margin-bottom: 45px;
+                  }
+                  > div {
+                    font-family: $pfont;
+                    width: 160px;
+
+                    > span {
+                      display: block;
+                      margin-bottom: 16px;
+                      font-size: 50px;
+                      font-weight: 900;
+                      text-transform: uppercase;
+                    }
+                    > p {
+                      color: rgba(6, 6, 2, 0.7);
+                      font-size: 15px;
+                      &:first-of-type {
+                        margin-bottom: 40px;
+                      }
+                      &:last-of-type {
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+                  > * {
+                    width: 340px;
+                  }
+                  &:first-of-type{
+                    z-index: 1;
+                  }
+                }
+              }
+            }
+            > span {
+              position: absolute;
+              bottom: 24px;
+              right: 24px;
+              color: black;
+              z-index: 3;
+              font-size: 17px;
+              font-weight: 700;
+              font-family: $primaryFont;
+              &::before{
+                content: '1';
+              }
+            }
+          }
+          &:last-of-type {
+            padding-left: 160px;
+          }
+        }
+      }
+    }
+  }
+  > .brand-band {
+    position: relative;
+    padding: 80px 20px;
+    overflow: hidden;
+    > div {
+      &:first-of-type {
+        background-image: url(../img/brands.svg);
+        background-repeat: repeat-x;
+        background-position: 0 50%;
+        animation: logoSlider 12000s linear infinite;
+        margin: 0 -20px;
+        background-size: auto;
+        height: 46px;
+      }
+
+      &:last-of-type {
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 192px;
+        height: 192px;
+        > * {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        > figure {
+          &:last-of-type {
+            transform: rotate(0deg);
+            animation: brandSpin 12000s linear infinite;
+          }
         }
       }
     }
@@ -556,5 +751,38 @@ main {
   68%,
   98% {
     height: 115px;
+  }
+}
+@keyframes imgExtend {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  2%,
+  32% {
+    width: 285px;
+    opacity: 1;
+  }
+  34%,
+  66% {
+    width: 526px;
+  }
+  68%,
+  100% {
+    width: 625px;
+    opacity: 1;
+  }
+}
+@keyframes logoSlider {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: -500000px 50%;
+  }
+}
+@keyframes brandSpin {
+  to {
+    transform: rotate(180000deg);
   }
 }

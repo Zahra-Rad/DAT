@@ -1,7 +1,3 @@
-main > section:nth-of-type(2) > div > * {
-  border: 1px solid rebeccapurple;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -442,8 +438,197 @@ main > section:nth-of-type(2) > div > ul > li:nth-of-type(3) > p {
 main > section:nth-of-type(2) > div > ul > li:nth-of-type(3) > span {
   animation: graphspan3 15s linear infinite;
 }
-main > section:nth-of-type(2) > div > * {
+main > section:nth-of-type(2) > div > figure {
+  position: relative;
+  width: 625px;
+  margin-right: -60px;
+  background-color: #a9ff36;
+}
+main > section:nth-of-type(2) > div > figure > figcaption {
+  top: 32px;
+  left: 32px;
+  font-family: "Noto Sans Gothic", sans-serif;
+  background-color: #fff;
+  position: absolute;
+  color: #060602;
+  padding: 20px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+main > section:nth-of-type(2) > div > figure > figcaption > span {
+  font-size: 40px;
+  font-weight: bolder;
+}
+main > section:nth-of-type(2) > div > figure > img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 504px;
+  animation: imgExtend 15s linear infinite;
+  -o-object-position: -10px 50%;
+     object-position: -10px 50%;
+  opacity: 0;
+}
+main > section:nth-of-type(3) {
+  padding: 160px 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main > section:nth-of-type(3) > * {
+  margin: 0 auto;
+}
+main > section:nth-of-type(3) > h2 {
+  font-size: 95px;
+  font-family: "Gudea", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 900;
+  line-height: 105px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+main > section:nth-of-type(3) > h2 > span {
+  font-family: "Noto Sans Gothic", sans-serif;
+  font-size: 16px;
+  position: absolute;
+  font-weight: 300;
+  top: -24px;
+  left: 8px;
+}
+main > section:nth-of-type(3) > div {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  overflow: hidden;
+}
+main > section:nth-of-type(3) > div > div {
   width: 50%;
+}
+main > section:nth-of-type(3) > div > div:first-of-type {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div {
+  width: 260px;
+  padding: 32px;
+  margin-right: 24px;
+  background-color: #a9ff36;
+  height: 320px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div > h4 {
+  font-family: "Sofia Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 64px;
+  font-weight: 400;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div > p {
+  font-family: "Gudea", sans-serif;
+  color: rgba(6, 6, 2, 0.7);
+  font-size: 15px;
+  margin-top: -5px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type {
+  width: 340px;
+  display: flex;
+  background-color: #a9ff36;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div {
+  padding: 32px;
+  width: 340px;
+  z-index: -1;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > h4 {
+  font-family: "Sofia Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > div {
+  font-family: "Gudea", sans-serif;
+  width: 160px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > div > span {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > div > p {
+  color: rgba(6, 6, 2, 0.7);
+  font-size: 15px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > div > p:first-of-type {
+  margin-bottom: 40px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > div > p:last-of-type {
+  margin-bottom: 10px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div > * {
+  width: 340px;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div:first-of-type {
+  z-index: 1;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > span {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  color: black;
+  z-index: 3;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Sofia Sans", sans-serif;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > span::before {
+  content: "1";
+}
+main > section:nth-of-type(3) > div > div:last-of-type {
+  padding-left: 160px;
+}
+main > .brand-band {
+  position: relative;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+main > .brand-band > div:first-of-type {
+  background-image: url(../img/brands.svg);
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  animation: logoSlider 12000s linear infinite;
+  margin: 0 -20px;
+  background-size: auto;
+  height: 46px;
+}
+main > .brand-band > div:last-of-type {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 192px;
+  height: 192px;
+}
+main > .brand-band > div:last-of-type > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > .brand-band > div:last-of-type > figure:last-of-type {
+  transform: rotate(0deg);
+  animation: brandSpin 12000s linear infinite;
 }
 
 @keyframes spin {
@@ -502,5 +687,35 @@ main > section:nth-of-type(2) > div > * {
   }
   68%, 98% {
     height: 115px;
+  }
+}
+@keyframes imgExtend {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  2%, 32% {
+    width: 285px;
+    opacity: 1;
+  }
+  34%, 66% {
+    width: 526px;
+  }
+  68%, 100% {
+    width: 625px;
+    opacity: 1;
+  }
+}
+@keyframes logoSlider {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: -500000px 50%;
+  }
+}
+@keyframes brandSpin {
+  to {
+    transform: rotate(180000deg);
   }
 }/*# sourceMappingURL=master.css.map */
