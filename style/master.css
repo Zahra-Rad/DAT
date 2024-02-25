@@ -515,12 +515,14 @@ main > section:nth-of-type(3) > div > div:first-of-type {
 }
 main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type {
   display: flex;
+  position: relative;
+  width: 260px;
   flex-direction: row-reverse;
 }
 main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div {
   width: 260px;
   padding: 32px;
-  margin-right: 24px;
+  position: absolute;
   background-color: #a9ff36;
   height: 320px;
 }
@@ -537,10 +539,43 @@ main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > di
   font-size: 15px;
   margin-top: -5px;
 }
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div::before {
+  content: "";
+  width: 24px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: -24px;
+  top: 0;
+  z-index: 2;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div:nth-of-type(1) {
+  animation: smSlider1 25s linear infinite;
+  right: 0;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div:nth-of-type(2) {
+  animation: smSlider2 25s linear infinite;
+  right: 100%;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div:nth-of-type(3) {
+  animation: smSlider3 25s linear infinite;
+  right: 200%;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div:nth-of-type(4) {
+  animation: smSlider4 25s linear infinite;
+  right: 300%;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:first-of-type > div:nth-of-type(5) {
+  animation: smSlider5 25s linear infinite;
+  right: 400%;
+}
 main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type {
   width: 340px;
   display: flex;
   background-color: #a9ff36;
+  padding-left: 48px;
+  z-index: 3;
+  position: relative;
 }
 main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div {
   padding: 32px;
@@ -580,6 +615,16 @@ main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div
 }
 main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type > div:first-of-type {
   z-index: 1;
+}
+main > section:nth-of-type(3) > div > div:first-of-type > div:last-of-type::before {
+  content: "";
+  width: 24px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 4;
 }
 main > section:nth-of-type(3) > div > div:first-of-type > span {
   position: absolute;
@@ -717,5 +762,195 @@ main > .brand-band > div:last-of-type > figure:last-of-type {
 @keyframes brandSpin {
   to {
     transform: rotate(180000deg);
+  }
+}
+@keyframes smSlider1 {
+  0% {
+    right: 0%;
+  }
+  1% {
+    right: -100%;
+  }
+  1.00000000000001% {
+    right: 400%;
+  }
+  19% {
+    right: 400%;
+  }
+  21% {
+    right: 300%;
+  }
+  39% {
+    right: 300%;
+  }
+  41% {
+    right: 200%;
+  }
+  59% {
+    right: 200%;
+  }
+  61% {
+    right: 100%;
+  }
+  79% {
+    right: 100%;
+  }
+  81% {
+    right: 0%;
+  }
+  99% {
+    right: 0%;
+  }
+}
+@keyframes smSlider2 {
+  0% {
+    right: 100%;
+  }
+  1% {
+    right: 0%;
+  }
+  19% {
+    right: 0%;
+  }
+  21% {
+    right: -100%;
+  }
+  21.0000000000001% {
+    right: 400%;
+  }
+  39% {
+    right: 400%;
+  }
+  41% {
+    right: 300%;
+  }
+  59% {
+    right: 300%;
+  }
+  61% {
+    right: 200%;
+  }
+  79% {
+    right: 200%;
+  }
+  81% {
+    right: 100%;
+  }
+  99% {
+    right: 100%;
+  }
+}
+@keyframes smSlider3 {
+  0% {
+    right: 200%;
+  }
+  1% {
+    right: 100%;
+  }
+  19% {
+    right: 100%;
+  }
+  21% {
+    right: 0%;
+  }
+  39% {
+    right: 0%;
+  }
+  41% {
+    right: -100%;
+  }
+  41.0000000000001% {
+    right: 400%;
+  }
+  59% {
+    right: 400%;
+  }
+  61% {
+    right: 300%;
+  }
+  79% {
+    right: 300%;
+  }
+  81% {
+    right: 200%;
+  }
+  99% {
+    right: 200%;
+  }
+}
+@keyframes smSlider4 {
+  0% {
+    right: 300%;
+  }
+  1% {
+    right: 200%;
+  }
+  19% {
+    right: 200%;
+  }
+  21% {
+    right: 100%;
+  }
+  39% {
+    right: 100%;
+  }
+  41% {
+    right: 0%;
+  }
+  59% {
+    right: 0%;
+  }
+  61% {
+    right: -100%;
+  }
+  61.0000000000001% {
+    right: 400%;
+  }
+  79% {
+    right: 400%;
+  }
+  81% {
+    right: 300%;
+  }
+  99% {
+    right: 300%;
+  }
+}
+@keyframes smSlider5 {
+  0% {
+    right: 400%;
+  }
+  1% {
+    right: 300%;
+  }
+  19% {
+    right: 300%;
+  }
+  21% {
+    right: 200%;
+  }
+  39% {
+    right: 200%;
+  }
+  41% {
+    right: 100%;
+  }
+  59% {
+    right: 100%;
+  }
+  61% {
+    right: 0%;
+  }
+  79% {
+    right: 0%;
+  }
+  81% {
+    right: -100%;
+  }
+  81.0000000000001% {
+    right: 400%;
+  }
+  99% {
+    right: 400%;
   }
 }/*# sourceMappingURL=master.css.map */
