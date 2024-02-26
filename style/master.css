@@ -477,6 +477,7 @@ main > section:nth-of-type(3) {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 main > section:nth-of-type(3) > * {
   margin: 0 auto;
@@ -717,6 +718,20 @@ main > section:nth-of-type(3) > div > div:last-of-type > a {
 main > section:nth-of-type(3) > div > div:last-of-type > a:hover {
   box-shadow: inset 0 -21px 0 0 #bfff39;
 }
+main > section:nth-of-type(3) > a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 112px;
+  height: 112px;
+  background-image: url(../img/logo.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  background-color: #fff;
+}
 main > .brand-band {
   position: relative;
   padding: 80px 20px;
@@ -749,6 +764,124 @@ main > .brand-band > div:last-of-type > * {
 main > .brand-band > div:last-of-type > figure:last-of-type {
   transform: rotate(0deg);
   animation: brandSpin 12000s linear infinite;
+}
+main > footer {
+  width: 100%;
+  padding: 80px 20px;
+  background-image: linear-gradient(180deg, #bfff39, #a8ff35);
+  display: flex;
+  flex-direction: column;
+}
+main > footer > div {
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+main > footer > div > div {
+  width: 416px;
+}
+main > footer > div > div > h4 {
+  font-family: "Noto Sans Gothic", sans-serif;
+  font-size: 26px;
+  margin-bottom: 26px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: #060602;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > p {
+  position: absolute;
+  top: 150px;
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: 200;
+  color: #060602;
+  line-height: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  transform-origin: right;
+}
+.logo > p > strong {
+  transform: translateX(-2px) rotate(-90deg);
+  transform-origin: right;
+}
+.logo > div {
+  width: 100%;
+  height: 100%;
+  background-color: #a9ff36;
+  border-radius: 33% 67% 32% 68%/32% 28% 72% 68%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: format 10s ease-in-out infinite alternate;
+}
+.logo > div > figure {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.logo > div > figure > img {
+  animation: format2 10s ease-in-out infinite alternate;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.logo > div > figure > figcaption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo > div > figure > figcaption > a {
+  text-decoration: none;
+  color: #a9ff36;
+  font-weight: bolder;
+  font-size: 18px;
+  width: 60px;
+  height: 30px;
+  transform: translateX(0) translateY(0);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > div > figure > figcaption > a:nth-of-type(1) {
+  transition-delay: 0;
+}
+.logo > div > figure > figcaption > a:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+.logo > div > figure > figcaption > a:nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+.logo > div > figure > figcaption > a:nth-of-type(4) {
+  transition-delay: 0.6s;
+}
+.logo > div > figure:hover > figcaption > a {
+  transform: translateX(-100px) translateY(0);
+  color: #060602;
 }
 
 @keyframes spin {
@@ -1252,5 +1385,39 @@ main > .brand-band > div:last-of-type > figure:last-of-type {
   }
   100% {
     content: "1";
+  }
+}
+@keyframes format {
+  0% {
+    border-radius: 51% 49% 37% 63%/63% 60% 40% 37%;
+  }
+  25% {
+    border-radius: 68% 32% 59% 41%/63% 60% 40% 37%;
+  }
+  50% {
+    border-radius: 49% 51% 69% 31%/40% 50% 50% 60%;
+  }
+  75% {
+    border-radius: 58% 42% 47% 53%/66% 56% 44% 34%;
+  }
+  100% {
+    border-radius: 40% 60% 62% 38%/56% 40% 60% 44%;
+  }
+}
+@keyframes format2 {
+  0% {
+    border-radius: 52% 48% 41% 59%/35% 40% 60% 65%;
+  }
+  25% {
+    border-radius: 68% 32% 52% 48%/55% 48% 52% 45%;
+  }
+  50% {
+    border-radius: 58% 42% 37% 63%/40% 65% 35% 60%;
+  }
+  75% {
+    border-radius: 45% 55% 55% 45%/58% 48% 52% 42%;
+  }
+  100% {
+    border-radius: 68% 32% 59% 41%/63% 60% 40% 37%;
   }
 }/*# sourceMappingURL=master.css.map */
