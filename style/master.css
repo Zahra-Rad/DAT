@@ -785,12 +785,128 @@ main > footer > div > div {
 main > footer > div > div > h4 {
   font-family: "Noto Sans Gothic", sans-serif;
   font-size: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
   font-weight: bolder;
   text-transform: uppercase;
   margin-top: 4px;
   color: #060602;
 }
+main > footer > div > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main > footer > div > div > ul > li {
+  margin-bottom: 28px;
+}
+main > footer > div > div > ul > li > a {
+  color: #060602;
+  font-family: "Sofia Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+main > footer > div > div > ul > li > a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #060602;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+main > footer > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+main > footer > div > div > div > input {
+  text-transform: uppercase;
+  font-family: "Sofia Sans", sans-serif;
+  height: 64px;
+}
+main > footer > div > div > div > input:first-of-type {
+  background-color: #fff;
+  width: 100%;
+  padding: 8px 12px;
+  color: #060602;
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+}
+main > footer > div > div > div > input:first-of-type::-moz-placeholder {
+  color: #333;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+main > footer > div > div > div > input:first-of-type::placeholder {
+  color: #333;
+  transition: 0.2s;
+}
+main > footer > div > div > div > input:first-of-type:focus {
+  outline: none;
+}
+main > footer > div > div > div > input:first-of-type:focus::-moz-placeholder {
+  color: white;
+}
+main > footer > div > div > div > input:first-of-type:focus::placeholder {
+  color: white;
+}
+main > footer > div > div > div > span {
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+  width: 80px;
+  border: 1px solid #000;
+  margin-left: 16px;
+  position: relative;
+}
+main > footer > div > div > div > span > input {
+  cursor: pointer;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  background-image: url(../img/bottom-arrow.svg);
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border: none;
+}
+main > footer > div > div > div > span::after {
+  content: "";
+  transition: 0.2s;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+main > footer > div > div > div > span:hover > input {
+  filter: invert(100%);
+}
+main > footer > div > div > div > span:hover::after {
+  left: 0;
+}
+main > footer > div > div:first-of-type > ul > li {
+  width: 30%;
+}
+main > footer > div > div:first-of-type > ul > li > a:hover::before {
+  width: 100%;
+}
+main > footer > div > div:nth-of-type(2) > ul > li {
+  width: 40%;
+}
+
 .logo {
   width: 150px;
   height: 150px;

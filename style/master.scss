@@ -827,16 +827,131 @@ main {
         > h4 {
           font-family: $secondaryFont;
           font-size: 26px;
-          margin-bottom: 26px;
+          margin-bottom: 32px;
           font-weight: bolder;
           text-transform: uppercase;
           margin-top: 4px;
           color: $secondaryColor;
         }
         > ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          > li {
+            margin-bottom: 28px;
+            > a {
+              color: $secondaryColor;
+              font-family: $primaryFont;
+              text-transform: uppercase;
+              font-weight: 300;
+              position: relative;
+              &::before {
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: $secondaryColor;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 0.2s;
+              }
+            }
+          }
         }
         > div {
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          z-index: 1;
           > input {
+            text-transform: uppercase;
+            font-family: $primaryFont;
+            height: 64px;
+            &:first-of-type {
+              background-color: #fff;
+              width: 100%;
+              padding: 8px 12px;
+              color: $secondaryColor;
+              padding-left: 18px;
+              font-size: 18px;
+              font-weight: 400;
+              border: none;
+              &::placeholder {
+                color: #333;
+                transition: 0.2s;
+              }
+              &:focus {
+                outline: none;
+                &::placeholder {
+                  color: white;
+                }
+              }
+            }
+          }
+          > span {
+            z-index: 2;
+            cursor: pointer;
+            overflow: hidden;
+            width: 80px;
+            border: 1px solid #000;
+            margin-left: 16px;
+            position: relative;
+            > input {
+              cursor: pointer;
+              background-color: transparent;
+              transform: rotate(-90deg);
+              background-image: url(../img/bottom-arrow.svg);
+              position: absolute;
+              top: 0;
+              right: 0px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              z-index: 2;
+              width: 64px;
+              height: 64px;
+              border: none;
+            }
+            &::after {
+              content: "";
+              transition: 0.2s;
+              background-color: black;
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+            }
+            &:hover {
+              > input {
+                filter: invert(100%);
+              }
+              &::after {
+                left: 0;
+              }
+            }
+          }
+        }
+        &:first-of-type {
+          > ul {
+            > li {
+              width: 30%;
+              > a {
+                &:hover {
+                  &::before {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          > ul {
+            > li {
+              width: 40%;
+            }
           }
         }
       }
