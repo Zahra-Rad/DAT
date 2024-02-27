@@ -48,7 +48,7 @@ main > header div {
   justify-self: flex-end;
   position: relative;
 }
-main > header div::before {
+main > header div::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -905,6 +905,50 @@ main > footer > div > div:first-of-type > ul > li > a:hover::before {
 }
 main > footer > div > div:nth-of-type(2) > ul > li {
   width: 40%;
+}
+main > footer > div > .contact ul {
+  display: flex;
+  justify-content: space-between;
+}
+main > footer > div > .contact ul > li {
+  width: 64px !important;
+  height: 64px;
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+main > footer > div > .contact ul > li > a {
+  width: 100%;
+  color: #060602;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
+}
+main > footer > div > .contact ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  transition: 0.2s;
+  background-color: #060602;
+  z-index: -1;
+}
+main > footer > div > .contact ul > li > a::before {
+  display: none;
+}
+main > footer > div > .contact ul > li > a:hover > img {
+  filter: invert(100%);
+}
+main > footer > div > .contact ul > li > a:hover::after {
+  background-color: #060602;
+  bottom: 0;
 }
 
 .logo {
